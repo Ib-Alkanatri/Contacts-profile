@@ -1,0 +1,58 @@
+﻿@model Contacts_profile.Models.Contacts
+
+@{
+    ViewBag.Title = "Contact Details";
+}
+
+<h2>Contact Details</h2>
+
+<div>
+    <h4>Contacts</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactFirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactFirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactLastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactLastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactPhoneNum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactPhoneNum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactAddress)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
